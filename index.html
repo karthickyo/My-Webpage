@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo" title="Student profile">
+            <img src="./images/logo.png" alt="">
+            <h2>U<span class="danger">M</span>S</h2>
+        </div>
+        <div class="navbar">
+            <a href="index.html" class="active">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp">today</span>
+                <h3>Time Table</h3>
+            </a> 
+            <a href="exam.html">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Examination</h3>
+            </a>
+            <a href="password.html">
+                <span class="material-icons-sharp">password</span>
+                <h3>Change Password</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp" onclick="">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+        <div id="profile-btn">
+            <span class="material-icons-sharp">person</span>
+        </div>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+        
+    </header>
+    <div class="container">
+        <aside>
+            <div class="profile">
+                <div class="top">
+                    <div class="profile-photo">
+                        <img src="https://lh3.googleusercontent.com/pw/ADCreHf6xA2Ccd743c2xJ9yjnmwdvi2awfDikmGo2esE_jcwbYuJEi1B6Yg5bSlCB5wEpNLLA2n097H8M3addkc-8hvCb08bNOX-SPaPqY0c_TvzWMeeOfq0qO6S6nUKGMSDxdYOmst3oGBE6IVzDIc3VKuhYYFMLdeIcEcYWYrn61tXHp26gsXi9Ten4dJf1lz17w8cCXfJa4jrASTGna-_p61KdO001WisihOmPGSYZRHnkZYLdP9CYnJjLcc3EOVrLcGQuIq6n1wdaspmYPLQgozXR-qy_gbeuqCkkt4WPEWjwyH6MaJKdTzJRXSXzk1UdPdXdmVH-XP9c7sO85jPUEBz_gWBCOmm59BOxZD0Qa0eBAni71NNWL36dEnjHynNHqxfn-59dVJJwFRcdFrerYWs2rLIzZXiB9wdqjejy-5qN9CPl6OHb_zXIQk0BSQHBmFoEbWnIkwYO82zNJFsX7thJnE-jh1zIA5HaUHvxrTewhBRnfcngUPMVXmCqnWItEIt3AhzBj2BdxRgQe8KB2TsZ4CG_o8AHuhUIXdeLcxmcXE6CPt1BGu3NNwDaE4u_dyQaOIMVarVQHyUdqaqYBEOdpAofA9FKfA33Vl3BGQZr7Y1Yr8EcRWzCqVlrWgcX5rI1p-2DW9Sjz6HrHqxiv6tRkyTmMM1_xj37hsJ9Jp9V3lnpFmfWhHxCIkx3cDDd9FKr41JXenAaK4SvUXVKEuDqJNx3pUbTaaGqMOrAtX8Ybfdy2_1f4YaN8uhHg2kZ0zeSUTJ9aJA_M3qapxC0HkKhQd58EhepMNtVXLcPK_pNhwT9QmWf-D0jGEGaYMz4UoN1DNEwkkz6-c6sH0UkqBhYbnX8F1hfqX-O5M7ivJDczoOdeWc2-nBEfINhQjVH1Jj13LjZuJM3S3hnKx_un_Vkp7EJrS95P03fA9rHxQ=w404-h405-s-no-gm?authuser=0" alt="">
+                    </div>
+                    <div class="info">
+                        <p>Hey, <b>Karthick Pranav</b> </p>
+                        <small class="text-muted">727723EUAI051</small>
+                    </div>
+                </div>
+                <div class="about">
+                    <h5>Course</h5>
+                    <p>BTech. Artificial Intelligence and Data Science</p>
+                    <h5>DOB</h5>
+                    <p>08-03-2006</p>
+                    <h5>Contact</h5>
+                    <p>6380043107</p>
+                    <h5>Email</h5>
+                    <p>23ai050@skcet.ac.in</p>
+                    <h5>Address</h5>
+                    <p>Ganesh illam, Kovaipudur, Coimbatore</p>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Performance</h1>
+            <div class="subjects">
+                <div class="eg">
+                    <span class="material-icons-sharp">architecture</span>
+                    <h3>Mathematics</h3>
+                    <h2>14/15</h2>
+                    <div class="progress">
+                        <svg><circle cx="38" cy="38" r="36"></circle></svg>
+                        <div class="number"><p>96%</p></div>
+                    </div>
+                    <small class="text-muted">This semester only</small>
+                </div>
+                <div class="mth">
+                    <span class="material-icons-sharp">functions</span>
+                    <h3>English</h3>
+                    <h2>14/15</h2>
+                    <div class="progress">
+                        <svg><circle cx="38" cy="38" r="36"></circle></svg>
+                        <div class="number"><p>97%</p></div>
+                    </div>
+                    <small class="text-muted">This semester only</small>
+                </div>
+                <div class="cs">
+                    <span class="material-icons-sharp">computer</span>
+                    <h3>Digital Logic Design</h3>
+                    <h2>12/15</h2>
+                    <div class="progress">
+                        <svg><circle cx="38" cy="38" r="36"></circle></svg>
+                        <div class="number"><p>90%</p></div>
+                    </div>
+                    <small class="text-muted">This semester only</small>
+                </div>
+                <div class="cg">
+                    <span class="material-icons-sharp">dns</span>
+                    <h3>C++</h3>
+                    <h2>14/15</h2>
+                    <div class="progress">
+                        <svg><circle cx="38" cy="38" r="36"></circle></svg>
+                        <div class="number"><p>96%</p></div>
+                    </div>
+                    <small class="text-muted">This semester only</small>
+                </div>
+                <div class="net">
+                    <span class="material-icons-sharp">router</span>
+                    <h3>Application development practices</h3>
+                    <h2>14/15</h2>
+                    <div class="progress">
+                        <svg><circle cx="38" cy="38" r="36"></circle></svg>
+                        <div class="number"><p>95%</p></div>
+                    </div>
+                    <small class="text-muted">This semester only</small>
+                </div>
+            </div>
+
+            <div class="timetable" id="timetable">
+                <div>
+                    <span id="prevDay">&lt;</span>
+                    <h2>Today's Timetable</h2>
+                    <span id="nextDay">&gt;</span>
+                </div>
+                <span class="closeBtn" onclick="timeTableAll()">X</span>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Room No.</th>
+                            <th>Subject</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </main>
+
+        <div class="right">
+            <div class="announcements">
+                <h2>Announcements</h2>
+                <div class="updates">
+                    <div class="message">
+                        <p> <b>Academic</b> C++ course will begin in few days.</p>
+                        <small class="text-muted">2 Minutes Ago</small>
+                    </div>
+                    <div class="message">
+                        <p> <b>Co-curricular</b> .</p>
+                        <small class="text-muted">10 Minutes Ago</small>
+                    </div>
+                    <div class="message">
+                        <p> <b>Examination</b> Instructions for Mid Term Examination.</p>
+                        <small class="text-muted">Yesterday</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leaves">
+                <h2>Teachers on leave</h2>
+                <div class="teacher">
+                    <div class="profile-photo"><img src="./images/profile-2.jpeg" alt=""></div>
+                    <div class="info">
+                        <h3>The Professor</h3>
+                        <small class="text-muted">Full Day</small>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <div class="profile-photo"><img src="./images/profile-3.jpg" alt=""></div>
+                    <div class="info">
+                        <h3>Lisa Manobal</h3>
+                        <small class="text-muted">Half Day</small>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <div class="profile-photo"><img src="./images/profile-4.jpg" alt=""></div>
+                    <div class="info">
+                        <h3>Himanshu Jindal</h3>
+                        <small class="text-muted">Full Day</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="timeTable.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
